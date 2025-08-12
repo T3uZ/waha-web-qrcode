@@ -84,7 +84,7 @@
 
       function updateQR() {
         const timestamp = new Date().getTime();
-        document.getElementById("qrcode").src = `http://localhost:3001/qr/${projeto}/${token}?t=${timestamp}`;
+        document.getElementById("qrcode").src = `${window.location.origin}/qr/${projeto}/${token}?t=${timestamp}`;
       }
 
       updateQR();
